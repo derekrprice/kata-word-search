@@ -1,0 +1,24 @@
+{
+  "name": "kata-word-search",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "node node_modules/jasmine/bin/jasmine.js",
+    "test-old": "node ./node_modules/karma/bin/karma start karma.conf.js",
+    "run": "nodemon ./lib/app-server.js"
+  },
+  "devDependencies": {
+    "jasmine-core": "3.3.0"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "jasmine": "^3.3.1",
+    "multer": "^1.4.1",
+    "requirejs": "^2.3.6"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "lib"
+    ]
+  }
+}
