@@ -1,9 +1,13 @@
 Word Search Kata
 ================
 
-To run the tests for this program, execute <pre>npm test</pre>.  This was tested with Node.js v10.15.0.  You may have success with other versions of Node.
+To run the tests for this program execute:
+<pre>npm test</pre>
+This was tested with Node.js v10.15.0.  You may have varying success with other versions of Node.
 
-To run the word search as an EXTREMELY simple upload form, run <pre>npm start</pre>.  By default, the server will listed on <a href='http://localhost:3000'>http://localhost:3000</a>.
+To run the word search application as an EXTREMELY simple upload form, run:
+<pre>npm start</pre>
+By default, the server will listen on <a href='http://localhost:3000'>http://localhost:3000</a>.
 
 ## The problem ##
 
