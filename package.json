@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "node node_modules/jasmine/bin/jasmine.js",
-    "test-old": "node ./node_modules/karma/bin/karma start karma.conf.js",
-    "run": "nodemon ./lib/app-server.js"
+    "test": "node node_modules/jasmine/bin/jasmine.js"
   },
   "devDependencies": {
     "jasmine-core": "3.3.0"
@@ -18,7 +16,7 @@
   },
   "nodemonConfig": {
     "watch": [
-      "lib"
+      "lib", "server.js"
     ]
   }
 }

@@ -1,8 +1,13 @@
 Word Search Kata
 ================
-In this exercise you will build a program to complete a [word search](https://en.wikipedia.org/wiki/Word_search) problem.
 
-Given a text file consisting of a list of words, and a series of rows of single-character lists representing the word search grid, this program should search for the words in the grid and return a set of x,y coordinates for each word found.
+To run the tests for this program, execute <pre>npm test</pre>.  This was tested with Node.js v10.15.0.  You may have success with other versions of Node.
+
+To run the word search as an EXTREMELY simple upload form, run <pre>npm start</pre>.  By default, the server will listed on <a href='http://localhost:3000'>http://localhost:3000</a>.
+
+## The problem ##
+
+Given a text file consisting of a list of words, and a series of rows of single-character lists representing the word search grid, this program will search for the words in the grid and return a set of x,y coordinates for each word found.
 
 The point of this kata to to provide a larger than trivial exercise that can be used to practice TDD. A significant portion of the effort will be in determining what tests should be written and, more importantly, written next.
 
