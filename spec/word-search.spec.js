@@ -4,10 +4,9 @@
 
 describe('kata-word-search', function() {
 
-    var app;
+    let app;
 
-    var needles = `BONES,KHAN,KIRK,SCOTTY,SPOCK,SULU,UHURA`;
-    var haystack = `U,M,K,H,U,L,K,I,N,V,J,O,C,W,E
+    let haystack = `U,M,K,H,U,L,K,I,N,V,J,O,C,W,E
 L,L,S,H,K,Z,Z,W,Z,C,G,J,U,Y,G
 H,S,U,P,J,P,R,J,D,H,S,B,X,T,G
 B,R,J,S,O,E,Q,E,T,I,K,K,G,L,E
@@ -32,8 +31,12 @@ K,Y,L,B,Q,Q,P,M,D,F,C,K,E,A,B`;
         app = undefined;
     });
 
-  it('should search horizontally', function() {
-    expect(app.search("SCOTTY\n" + haystack)).toBe('SCOTTY: (0,5),(1,5),(2,5),(3,5),(4,5),(5,5)\n');
-  });
+    it('should search horizontally', function () {
+        expect(app.search("SCOTTY\n" + haystack)).toBe('SCOTTY: (0,5),(1,5),(2,5),(3,5),(4,5),(5,5)\n');
+    });
+
+    it('should search vertically', function () {
+        expect(app.search("BONES\n" + haystack)).toBe('BONES: (0,6),(0,7),(0,8),(0,9),(0,10)\n');
+    });
 
 });
