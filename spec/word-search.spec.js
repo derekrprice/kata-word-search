@@ -15,12 +15,12 @@ S,C,O,T,T,Y,K,Z,R,E,P,P,X,P,F
 B,L,Q,S,L,N,E,E,E,V,U,L,F,M,Z
 O,K,R,I,K,A,M,M,R,M,F,B,A,P,P
 N,U,I,I,Y,H,Q,M,E,M,Q,R,Y,F,S
-E,Y,Z,Y,G,K,Q,J,P,C,Q,W,Y,A,K
-S,J,F,Z,M,Q,I,B,D,B,E,M,K,W,D
-T,G,L,B,H,C,B,E,C,H,T,O,Y,I,K
-O,J,Y,E,U,L,N,C,C,L,Y,B,Z,U,H
-W,Z,M,I,S,U,K,U,R,B,I,D,U,X,S
-K,Y,L,B,Q,Q,P,M,D,F,C,K,E,A,B`;
+E,Y,Z,Y,G,K,Q,J,C,C,Q,W,Y,A,K
+S,J,F,Z,M,Q,I,B,D,H,E,M,K,W,D
+T,G,L,B,H,C,B,E,C,H,E,O,Y,I,K
+O,J,Y,E,U,L,N,C,C,L,Y,K,Z,U,H
+W,Z,M,I,S,U,K,U,R,B,I,D,O,X,S
+K,Y,L,B,Q,Q,P,M,D,F,C,K,E,V,B`;
 
     // call the init function of calculator to register DOM elements
     beforeEach(() => {
@@ -48,7 +48,7 @@ K,Y,L,B,Q,Q,P,M,D,F,C,K,E,A,B`;
     });
 
     it('should search diagonally ascending', function () {
-        expect(app.search("SULU\n" + haystack)).toBe('SULU: (3,3),(2,2),(1,1),(0,0)\n');
+        expect(app.search("CHEKOV\n" + haystack)).toBe('CHEKOV: (8,9),(9,10),(10,11),(11,12),(12,13),(13,14)\n');
     });
 
 });
