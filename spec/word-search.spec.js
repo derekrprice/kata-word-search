@@ -47,4 +47,8 @@ K,Y,L,B,Q,Q,P,M,D,F,C,K,E,A,B`;
         expect(app.search("SPOCK\n" + haystack)).toBe('SPOCK: (2,1),(3,2),(4,3),(5,4),(6,5)\n');
     });
 
+    it('should search diagonally ascending', function () {
+        expect(app.search("SULU\n" + haystack)).toBe('SULU: (3,3),(2,2),(1,1),(0,0)\n');
+    });
+
 });
