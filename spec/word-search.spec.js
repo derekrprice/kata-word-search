@@ -20,7 +20,7 @@ S,J,F,Z,M,Q,I,B,D,H,E,M,K,W,D
 T,G,L,B,H,C,B,E,C,H,E,O,Y,I,K
 O,J,Y,E,U,L,N,C,C,L,Y,K,Z,U,H
 W,Z,M,I,S,U,K,U,R,B,I,D,O,X,S
-K,Y,L,B,Q,Q,P,M,D,F,C,K,E,V,B`;
+C,Y,L,B,Q,Q,P,M,D,F,C,K,E,V,B`;
 
     // call the init function of calculator to register DOM elements
     beforeEach(() => {
