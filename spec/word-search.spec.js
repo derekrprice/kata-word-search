@@ -32,7 +32,7 @@ K,Y,L,B,Q,Q,P,M,D,F,C,K,E,A,B`;
     });
 
     it('fails to find missing word', function () {
-        expect(app.search("DEREK\n" + haystack)).toBe(false);
+        expect(app.search("DEREK\n" + haystack)).toBe('\n');
     });
 
     it('should search horizontally', function () {
