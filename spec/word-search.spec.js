@@ -43,4 +43,8 @@ K,Y,L,B,Q,Q,P,M,D,F,C,K,E,A,B`;
         expect(app.search("BONES\n" + haystack)).toBe('BONES: (0,6),(0,7),(0,8),(0,9),(0,10)\n');
     });
 
+    it('should search diagonally descending', function () {
+        expect(app.search("SPOCK\n" + haystack)).toBe('SPOCK: (2,1),(3,2),(4,3),(5,4),(6,5)\n');
+    });
+
 });
