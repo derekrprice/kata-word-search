@@ -31,6 +31,10 @@ K,Y,L,B,Q,Q,P,M,D,F,C,K,E,A,B`;
         app = undefined;
     });
 
+    it('fails to find missing word', function () {
+        expect(app.search("DEREK\n" + haystack)).toBe(false);
+    });
+
     it('should search horizontally', function () {
         expect(app.search("SCOTTY\n" + haystack)).toBe('SCOTTY: (0,5),(1,5),(2,5),(3,5),(4,5),(5,5)\n');
     });
