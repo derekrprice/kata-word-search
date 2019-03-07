@@ -3,7 +3,7 @@ const multer = require('multer');
 const fs = require('fs');
 const searcher = require('./lib/word-search');
 const app = express();
-const port = 3000;
+const port = 80;
 const upload = multer({dest: '/tmp'});
 
 app.use(express.static('public'));
